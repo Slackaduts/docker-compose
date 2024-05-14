@@ -16,4 +16,6 @@ services:
       - /dev/dri/renderD128:/dev/dri/renderD128 #Arc A380 for Av1 transcoding
     extra_hosts:
       - 'host.docker.internal:host-gateway'
+    depends_on:
+      - tailscale
     restart: 'unless-stopped'
