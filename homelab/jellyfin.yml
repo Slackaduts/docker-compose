@@ -9,7 +9,7 @@ services:
       - "109" # Change this to match your "render" host group id and remove this comment
     network_mode: 'host'
     volumes:
-      - /mnt/MovieMonster/.jellyfin/config:/config
+      - /mnt/MovieMonster/jellyfin/config:/config
       # - /mnt/MovieMonster/.jellyfin/cache:/cache
       - /mnt/MovieMonster:/media
     devices:
